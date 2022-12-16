@@ -1,8 +1,10 @@
-<!-- a tener en cuenta los pipes solo transforman vizualmente la data -->
-<h1>{{ nombre | titlecase }}</h1>
-<!-- el valor es de tipo number pero al pasar por el pipe se considera string -->
-<h1>{{ valor | number }}</h1>
+<div class="text-layout">
+  <!-- a tener en cuenta los pipes solo transforman vizualmente la data -->
+  <h1>{{ nombre | titlecase }}</h1>
+  <!-- el valor es de tipo number pero al pasar por el pipe se considera string -->
+  <h1>{{ valor | number }}</h1>
+</div>
 
-<button (click)="mostrarNombre()">
-  Cambiar nombre
-</button>
+<button pButton 
+(click)="mostrarNombre()"
+label="Cambiar Nombre"></button>
