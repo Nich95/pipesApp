@@ -1,21 +1,2 @@
 
-<!-- a tener en cuenta los pipes solo transforman vizualmente la data -->
-<h1>{{ nombre | lowercase }}</h1>
-
-
-<!-- el valor es de tipo number pero al pasar por el pipe se considera string -->
-<h1>{{ valor | number }}</h1>
-
-
-  <button pButton  
-        (click)="mostrarNombre()" 
-        label="Cambiar Nombre"
-        class= "p-button-danger"
-        icon="pi pi-bell"
-        iconPos="right"></button>
-
-<!-- cuando utilizamos direcamente una propiedad de la clase tambien podemos utilizar pipes -->
-<p-card [header]="nombre | titlecase"
-        subheader="Esto es un subheader">
-
-</p-card>
+<app-menu>
