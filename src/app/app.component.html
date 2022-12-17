@@ -1,10 +1,23 @@
-<div class="text-layout">
-  <!-- a tener en cuenta los pipes solo transforman vizualmente la data -->
-  <h1>{{ nombre | titlecase }}</h1>
+
+<p-card>
+  
+    <!-- a tener en cuenta los pipes solo transforman vizualmente la data -->
+    <h1>{{ nombre | lowercase }}</h1>
+
+
   <!-- el valor es de tipo number pero al pasar por el pipe se considera string -->
   <h1>{{ valor | number }}</h1>
-</div>
+  
 
-<button pButton 
-(click)="mostrarNombre()"
-label="Cambiar Nombre"></button>
+    <button pButton  
+          (click)="mostrarNombre()" 
+          label="Cambiar Nombre"
+          class= "p-button-danger"
+          icon="pi pi-bell"
+          iconPos="right"></button>
+</p-card>
+
+<p-card [header]="nombre | titlecase"
+        subheader="Esto es un subheader">
+
+</p-card>
